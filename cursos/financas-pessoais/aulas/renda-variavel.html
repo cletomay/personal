@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renda Variável | Finanças Pessoais</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        :root {
+            --bs-primary: #111 !important;
+            --bs-primary-rgb: 17, 17, 17 !important;
+            --bs-body-bg: #fff;
+        }
+
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            background: #f6f7fb;
+            color: #23272f;
+        }
+
+        .main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 48px 16px 32px 16px;
+        }
+
+        .post-title {
+            font-size: 2.1rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .post-meta {
+            color: #888;
+            font-size: 1rem;
+            margin-bottom: 28px;
+        }
+
+        .post-content {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 1px 6px rgba(55, 53, 47, 0.07);
+            padding: 32px 28px;
+            font-size: 1.13rem;
+            line-height: 1.7;
+        }
+
+        .post-content h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 32px;
+            margin-bottom: 16px;
+        }
+
+        .post-content p {
+            margin-bottom: 16px;
+        }
+
+        .concept-box {
+            background: #f8f9fa;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 24px;
+            margin: 20px 0;
+        }
+
+        .info-box {
+            background: #e7f5ff;
+            border-left: 4px solid #0d6efd;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .alert-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .example-box {
+            background: #d1e7dd;
+            border-left: 4px solid #198754;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .metric-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .metric-card {
+            background: #f8f9fa;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .metric-card h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .comparison-table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 12px;
+            border: 1px solid #eee;
+            text-align: left;
+        }
+
+        .comparison-table th {
+            background: #f8f9fa;
+            font-weight: 600;
+        }
+
+        .book-visualization {
+            background: #f8f9fa;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            font-family: monospace;
+        }
+
+        .book-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 4px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .btn-outline-primary {
+            color: #111 !important;
+            border-color: #111 !important;
+            background-color: transparent !important;
+        }
+
+        .btn-outline-primary:hover,
+        .btn-outline-primary:focus,
+        .btn-outline-primary:active {
+            color: #fff !important;
+            background-color: #111 !important;
+            border-color: #111 !important;
+        }
+
+        .back-link {
+            margin-top: 32px;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="main">
+        <div class="post-title">Renda Variável</div>
+        <div class="post-meta">Aula 14 • Finanças Pessoais</div>
+        <div class="post-content">
+            <p>A renda variável é um universo de investimentos onde o retorno não é previamente conhecido. O preço dos ativos varia conforme as forças de mercado, principalmente oferta e demanda, além do desempenho dos emissores.</p>
+
+            <h2>Ações</h2>
+            <div class="concept-box">
+                <h3><i class="bi bi-graph-up"></i> O que são Ações?</h3>
+                <p>Ações representam uma fração de propriedade de uma empresa. Ao comprar ações, você se torna sócio da empresa e tem direito a:</p>
+                <ul>
+                    <li>Participação nos lucros (dividendos)</li>
+                    <li>Valorização do capital (ganho de capital)</li>
+                    <li>Voto em assembleias (em alguns casos)</li>
+                </ul>
+            </div>
+
+            <div class="alert-box">
+                <h3><i class="bi bi-exclamation-triangle"></i> Preço vs. Valor</h3>
+                <p>É fundamental entender a diferença:</p>
+                <ul>
+                    <li><strong>Preço:</strong> Quanto custa a ação no momento</li>
+                    <li><strong>Valor:</strong> Quanto a empresa realmente vale considerando fundamentos</li>
+                </ul>
+                <p>O mercado pode precificar uma empresa acima ou abaixo de seu valor real por diversos fatores.</p>
+            </div>
+
+            <h2>Book de Ofertas</h2>
+            <div class="concept-box">
+                <h3><i class="bi bi-book"></i> Como Funciona</h3>
+                <p>O book de ofertas é onde compradores e vendedores registram suas intenções de negociação:</p>
+            </div>
+
+            <div class="book-visualization">
+                <div style="text-align:center;margin-bottom:10px"><strong>PETR4 - Book de Ofertas</strong></div>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
+                    <div>
+                        <div style="color:#198754;margin-bottom:8px">Compras</div>
+                        <div class="book-row">
+                            <span>34,50</span>
+                            <span>1000</span>
+                        </div>
+                        <div class="book-row">
+                            <span>34,45</span>
+                            <span>2500</span>
+                        </div>
+                        <div class="book-row">
+                            <span>34,40</span>
+                            <span>5000</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div style="color:#dc3545;margin-bottom:8px">Vendas</div>
+                        <div class="book-row">
+                            <span>34,55</span>
+                            <span>3000</span>
+                        </div>
+                        <div class="book-row">
+                            <span>34,60</span>
+                            <span>1500</span>
+                        </div>
+                        <div class="book-row">
+                            <span>34,65</span>
+                            <span>2000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Principais Indicadores</h2>
+            
+            <div class="metric-grid">
+                <div class="metric-card">
+                    <h4><i class="bi bi-calculator"></i> P/L (Preço/Lucro)</h4>
+                    <p>Quantos anos de lucro atual são necessários para pagar o investimento</p>
+                    <div class="example-box">
+                        P/L = 10 significa que em 10 anos de lucros iguais você recupera o investimento
+                    </div>
+                </div>
+                
+                <div class="metric-card">
+                    <h4><i class="bi bi-cash-stack"></i> Dividend Yield</h4>
+                    <p>Percentual de retorno em dividendos em relação ao preço da ação</p>
+                    <div class="example-box">
+                        DY = 5% significa R$ 5 em dividendos para cada R$ 100 investidos
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <h4><i class="bi bi-building"></i> P/VP (Preço/Valor Patrimonial)</h4>
+                    <p>Relação entre o preço de mercado e o valor contábil</p>
+                    <div class="example-box">
+                        P/VP < 1: empresa negociada abaixo do valor patrimonial
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <h4><i class="bi bi-currency-dollar"></i> ROE (Return on Equity)</h4>
+                    <p>Retorno sobre o patrimônio líquido</p>
+                    <div class="example-box">
+                        ROE = 15% significa que a empresa gera R$ 15 de lucro para cada R$ 100 de patrimônio
+                    </div>
+                </div>
+            </div>
+
+            <h2>Fundos Imobiliários (FIIs)</h2>
+            <div class="concept-box">
+                <h3><i class="bi bi-houses"></i> O que são FIIs?</h3>
+                <p>São fundos que investem em ativos relacionados ao mercado imobiliário:</p>
+                <ul>
+                    <li>Imóveis físicos para renda (escritórios, shoppings, galpões)</li>
+                    <li>Títulos imobiliários (CRI, LCI)</li>
+                    <li>Ações de empresas do setor imobiliário</li>
+                </ul>
+
+                <div class="info-box">
+                    <h4>Vantagens dos FIIs</h4>
+                    <ul>
+                        <li>Acesso ao mercado imobiliário com baixo investimento</li>
+                        <li>Isenção de IR para pessoa física nos rendimentos mensais</li>
+                        <li>Gestão profissional dos imóveis</li>
+                        <li>Alta liquidez comparada a imóveis físicos</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2>BDRs (Brazilian Depositary Receipts)</h2>
+            <div class="concept-box">
+                <h3><i class="bi bi-globe"></i> O que são BDRs?</h3>
+                <p>São certificados que representam ações de empresas estrangeiras negociadas no Brasil:</p>
+                <ul>
+                    <li>Forma de investir em empresas internacionais</li>
+                    <li>Negociados em reais na B3</li>
+                    <li>Exposição à variação cambial</li>
+                </ul>
+            </div>
+
+            <h2>ETFs (Exchange Traded Funds)</h2>
+            <div class="concept-box">
+                <h3><i class="bi bi-collection"></i> O que são ETFs?</h3>
+                <p>São fundos negociados em bolsa que acompanham um índice:</p>
+                <ul>
+                    <li>BOVA11: Segue o Ibovespa</li>
+                    <li>IVVB11: Segue o S&P 500</li>
+                    <li>SMAL11: Segue o índice Small Caps</li>
+                </ul>
+                
+                <div class="info-box">
+                    <h4>Vantagens dos ETFs</h4>
+                    <ul>
+                        <li>Diversificação com uma única compra</li>
+                        <li>Custos menores que fundos tradicionais</li>
+                        <li>Alta liquidez e transparência</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2>Análises de Investimento</h2>
+
+            <div class="concept-box">
+                <h3><i class="bi bi-graph-up"></i> Análise Técnica</h3>
+                <p>Estuda os movimentos dos preços e volumes para identificar tendências:</p>
+                <ul>
+                    <li>Gráficos e padrões de preço</li>
+                    <li>Indicadores técnicos</li>
+                    <li>Volume de negociação</li>
+                </ul>
+            </div>
+
+            <div class="concept-box">
+                <h3><i class="bi bi-file-earmark-text"></i> Análise Fundamentalista</h3>
+                <p>Avalia os fundamentos da empresa:</p>
+                <ul>
+                    <li>Balanços e demonstrativos financeiros</li>
+                    <li>Setor de atuação e competitividade</li>
+                    <li>Gestão e governança</li>
+                    <li>Perspectivas de crescimento</li>
+                </ul>
+            </div>
+
+            <div class="alert-box">
+                <h3>Pontos Importantes</h3>
+                <ul>
+                    <li>Diversifique entre setores e tipos de ativos</li>
+                    <li>Considere seu perfil de risco e horizonte de investimento</li>
+                    <li>Mantenha-se informado sobre o mercado e empresas</li>
+                    <li>Não tome decisões baseadas em emoções</li>
+                    <li>Use stop loss para limitar perdas</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="back-link">
+            <a href="../index.html" class="btn btn-outline-primary"><i class="bi bi-arrow-left"></i> Voltar para o curso</a>
+        </div>
+    </main>
+</body>
+
+</html>

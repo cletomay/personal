@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juros Simples e Compostos | Finanças Pessoais</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        :root {
+            --bs-primary: #111 !important;
+            --bs-primary-rgb: 17, 17, 17 !important;
+            --bs-body-bg: #fff;
+        }
+
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            background: #f6f7fb;
+            color: #23272f;
+        }
+
+        .main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 48px 16px 32px 16px;
+        }
+
+        .post-title {
+            font-size: 2.1rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .post-meta {
+            color: #888;
+            font-size: 1rem;
+            margin-bottom: 28px;
+        }
+
+        .post-content {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 1px 6px rgba(55, 53, 47, 0.07);
+            padding: 32px 28px;
+            font-size: 1.13rem;
+            line-height: 1.7;
+        }
+
+        .post-content h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 32px;
+            margin-bottom: 16px;
+        }
+
+        .post-content p {
+            margin-bottom: 16px;
+        }
+
+        .formula-box {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+            font-family: monospace;
+            font-size: 1.2rem;
+        }
+
+        .example-box {
+            background: #f8f9fa;
+            border-left: 4px solid #111;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .alert-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .btn-primary,
+        .btn-primary:active,
+        .btn-primary:focus,
+        .btn-primary:hover {
+            background-color: #111 !important;
+            border-color: #111 !important;
+            color: #fff !important;
+        }
+
+        .btn-outline-primary {
+            color: #111 !important;
+            border-color: #111 !important;
+            background-color: transparent !important;
+        }
+
+        .btn-outline-primary:hover,
+        .btn-outline-primary:focus,
+        .btn-outline-primary:active {
+            color: #fff !important;
+            background-color: #111 !important;
+            border-color: #111 !important;
+        }
+
+        .back-link {
+            margin-top: 32px;
+        }
+
+        table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #eee;
+            text-align: center;
+        }
+
+        th {
+            background: #f8f9fa;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="main">
+        <div class="post-title">Juros Simples e Compostos</div>
+        <div class="post-meta">Aula 5 • Finanças Pessoais</div>
+        <div class="post-content">
+            <p>Os juros são a remuneração pelo uso do dinheiro ao longo do tempo. Existem duas formas principais de calcular juros: simples e compostos. Entender a diferença entre eles é fundamental para tomar decisões financeiras inteligentes.</p>
+
+            <h2>Juros Simples</h2>
+            <p>Nos juros simples, a taxa de juros incide apenas sobre o valor principal inicial. É como se o dinheiro não gerasse "filhos" ao longo do tempo.</p>
+
+            <div class="formula-box">
+                M = P × (1 + i × t)<br><br>
+                Onde:<br>
+                M = Montante final<br>
+                P = Principal (valor inicial)<br>
+                i = Taxa de juros (em decimal)<br>
+                t = Tempo
+            </div>
+
+            <div class="example-box">
+                <p><strong>Exemplo de Juros Simples:</strong></p>
+                <p>Investimento de R$ 1.000 a 10% ao ano por 3 anos:</p>
+                <ul>
+                    <li>Ano 1: R$ 1.000 + (1.000 × 0,10) = R$ 1.100</li>
+                    <li>Ano 2: R$ 1.000 + (1.000 × 0,10 × 2) = R$ 1.200</li>
+                    <li>Ano 3: R$ 1.000 + (1.000 × 0,10 × 3) = R$ 1.300</li>
+                </ul>
+            </div>
+
+            <h2>Juros Compostos</h2>
+            <p>Nos juros compostos, os juros de cada período são incorporados ao capital para o cálculo dos juros do período seguinte. É o famoso "juros sobre juros" ou "efeito bola de neve".</p>
+
+            <div class="formula-box">
+                M = P × (1 + i)^t<br><br>
+                Onde:<br>
+                M = Montante final<br>
+                P = Principal (valor inicial)<br>
+                i = Taxa de juros (em decimal)<br>
+                t = Tempo<br>
+                ^ = Elevado à potência
+            </div>
+
+            <div class="example-box">
+                <p><strong>Exemplo de Juros Compostos:</strong></p>
+                <p>O mesmo investimento de R$ 1.000 a 10% ao ano por 3 anos:</p>
+                <ul>
+                    <li>Ano 1: R$ 1.000 × (1 + 0,10) = R$ 1.100</li>
+                    <li>Ano 2: R$ 1.100 × (1 + 0,10) = R$ 1.210</li>
+                    <li>Ano 3: R$ 1.210 × (1 + 0,10) = R$ 1.331</li>
+                </ul>
+            </div>
+
+            <div class="alert-box">
+                <p><strong>Importante!</strong> Note que com os mesmos valores iniciais, os juros compostos geraram R$ 31 a mais que os juros simples em apenas 3 anos. Essa diferença se torna ainda mais significativa com o passar do tempo.</p>
+            </div>
+
+            <h2>O Poder do Tempo nos Juros Compostos</h2>
+            <p>O verdadeiro potencial dos juros compostos se revela no longo prazo. Vamos ver o que acontece com R$ 1.000 investidos a 10% ao ano em diferentes períodos:</p>
+
+            <table>
+                <tr>
+                    <th>Período</th>
+                    <th>Juros Simples</th>
+                    <th>Juros Compostos</th>
+                </tr>
+                <tr>
+                    <td>5 anos</td>
+                    <td>R$ 1.500</td>
+                    <td>R$ 1.611</td>
+                </tr>
+                <tr>
+                    <td>10 anos</td>
+                    <td>R$ 2.000</td>
+                    <td>R$ 2.594</td>
+                </tr>
+                <tr>
+                    <td>20 anos</td>
+                    <td>R$ 3.000</td>
+                    <td>R$ 6.727</td>
+                </tr>
+                <tr>
+                    <td>30 anos</td>
+                    <td>R$ 4.000</td>
+                    <td>R$ 17.449</td>
+                </tr>
+            </table>
+
+            <div class="alert-box">
+                <p><strong>O Poder do Tempo:</strong> Em 30 anos, enquanto os juros simples multiplicaram o capital por 4, os juros compostos multiplicaram por mais de 17 vezes! Esta é a razão pela qual Einstein supostamente chamou os juros compostos de "a oitava maravilha do mundo".</p>
+            </div>
+
+            <h2>Aplicações Práticas</h2>
+            <p>Entender juros é fundamental para:</p>
+            <ul>
+                <li><strong>Investimentos:</strong> A maioria dos investimentos usa juros compostos, o que favorece o investidor no longo prazo</li>
+                <li><strong>Dívidas:</strong> Cartões de crédito e empréstimos geralmente usam juros compostos, o que pode ser muito perigoso para o devedor</li>
+                <li><strong>Planejamento financeiro:</strong> Compreender o poder dos juros compostos ajuda a planejar melhor a aposentadoria e outros objetivos de longo prazo</li>
+            </ul>
+
+            <h2>Dicas Práticas</h2>
+            <ul>
+                <li>Comece a investir o quanto antes para aproveitar o poder do tempo nos juros compostos</li>
+                <li>Evite dívidas com juros compostos, especialmente as de cartão de crédito</li>
+                <li>Faça aportes regulares em seus investimentos para potencializar o efeito dos juros compostos</li>
+                <li>Use calculadoras financeiras para simular diferentes cenários de investimento</li>
+            </ul>
+
+            <div class="example-box">
+                <p><strong>Dica de Ouro:</strong> Se você começar a investir R$ 500 por mês aos 25 anos, com uma rentabilidade média de 10% ao ano, aos 65 anos terá aproximadamente R$ 3,3 milhões. Se começar aos 35 anos, terá cerca de R$ 1,2 milhões. A diferença de R$ 2,1 milhões mostra o imenso poder do tempo nos juros compostos!</p>
+            </div>
+
+        </div>
+        <div class="back-link">
+            <a href="../index.html" class="btn btn-outline-primary"><i class="bi bi-arrow-left"></i> Voltar para o curso</a>
+        </div>
+    </main>
+</body>
+
+</html>

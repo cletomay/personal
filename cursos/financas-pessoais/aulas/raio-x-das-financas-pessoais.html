@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raio X das Finanças Pessoais | Finanças Pessoais</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        :root {
+            --bs-primary: #111 !important;
+            --bs-primary-rgb: 17, 17, 17 !important;
+            --bs-body-bg: #fff;
+        }
+
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            background: #f6f7fb;
+            color: #23272f;
+        }
+
+        .main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 48px 16px 32px 16px;
+        }
+
+        .post-title {
+            font-size: 2.1rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .post-meta {
+            color: #888;
+            font-size: 1rem;
+            margin-bottom: 28px;
+        }
+
+        .post-content {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 1px 6px rgba(55, 53, 47, 0.07);
+            padding: 32px 28px;
+            font-size: 1.13rem;
+            line-height: 1.7;
+        }
+
+        .post-content h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 32px;
+            margin-bottom: 16px;
+        }
+
+        .post-content p {
+            margin-bottom: 16px;
+        }
+
+        .stat-box {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+            border: 1px solid #eee;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #111;
+            margin-bottom: 8px;
+        }
+
+        .example-box {
+            background: #f8f9fa;
+            border-left: 4px solid #111;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .alert-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .tip-box {
+            background: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #eee;
+            text-align: left;
+        }
+
+        th {
+            background: #f8f9fa;
+            font-weight: 600;
+        }
+
+        .expense-category {
+            background: #f8f9fa;
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+
+        .btn-outline-primary {
+            color: #111 !important;
+            border-color: #111 !important;
+            background-color: transparent !important;
+        }
+
+        .btn-outline-primary:hover,
+        .btn-outline-primary:focus,
+        .btn-outline-primary:active {
+            color: #fff !important;
+            background-color: #111 !important;
+            border-color: #111 !important;
+        }
+
+        .back-link {
+            margin-top: 32px;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="main">
+        <div class="post-title">Raio X das Finanças Pessoais</div>
+        <div class="post-meta">Aula 6 • Finanças Pessoais</div>
+        <div class="post-content">
+            <p>O primeiro passo para uma vida financeira saudável é ter clareza sobre sua situação atual. É surpreendente como muitas pessoas não têm ideia real de quanto ganham e gastam por mês.</p>
+
+            <div class="stat-box">
+                <div class="stat-number">78%</div>
+                <p>dos brasileiros não fazem um controle detalhado do próprio orçamento*</p>
+                <small>*Fonte: Pesquisa CNDL/SPC Brasil</small>
+            </div>
+
+            <h2>Por Que as Pessoas Não Controlam as Finanças?</h2>
+            <ul>
+                <li>Acham que já têm tudo "na cabeça"</li>
+                <li>Medo de descobrir a realidade</li>
+                <li>Acreditam que é muito complicado</li>
+                <li>Falta de hábito ou disciplina</li>
+            </ul>
+
+            <div class="alert-box">
+                <p><strong>Fato Surpreendente:</strong> A maioria das pessoas que começa a anotar seus gastos se surpreende ao descobrir que gasta muito mais do que imaginava em certas categorias.</p>
+            </div>
+
+            <h2>Entendendo Seus Ganhos</h2>
+            <p>Liste todas as suas fontes de renda:</p>
+            <ul>
+                <li>Salário líquido</li>
+                <li>Renda extra (freelance, bicos)</li>
+                <li>Rendimentos de investimentos</li>
+                <li>Outras fontes de renda</li>
+            </ul>
+
+            <h2>Tipos de Gastos</h2>
+            
+            <div class="expense-category">
+                <h3 style="font-size: 1.2rem;margin-bottom:12px;">1. Gastos Fixos</h3>
+                <p>São aqueles que ocorrem todos os meses com valor praticamente igual:</p>
+                <ul>
+                    <li>Aluguel/Financiamento</li>
+                    <li>Condomínio</li>
+                    <li>Água, luz, internet</li>
+                    <li>Plano de saúde</li>
+                    <li>Mensalidades escolares</li>
+                </ul>
+            </div>
+
+            <div class="expense-category">
+                <h3 style="font-size: 1.2rem;margin-bottom:12px;">2. Gastos Variáveis</h3>
+                <p>Ocorrem todo mês, mas com valores diferentes:</p>
+                <ul>
+                    <li>Alimentação</li>
+                    <li>Transporte</li>
+                    <li>Lazer</li>
+                    <li>Farmácia</li>
+                </ul>
+            </div>
+
+            <div class="expense-category">
+                <h3 style="font-size: 1.2rem;margin-bottom:12px;">3. Gastos Sazonais</h3>
+                <p>Ocorrem em períodos específicos do ano:</p>
+                <ul>
+                    <li>IPTU (geralmente anual)</li>
+                    <li>IPVA e seguro do carro</li>
+                    <li>Material escolar</li>
+                    <li>Manutenção do carro/casa</li>
+                    <li>Presentes de fim de ano</li>
+                </ul>
+            </div>
+
+            <div class="tip-box">
+                <p><strong>Dica importante:</strong> Para os gastos sazonais, divida o valor anual por 12 e reserve esse valor mensalmente. Por exemplo, se seu IPVA + seguro do carro somam R$ 3.600 por ano, reserve R$ 300 por mês.</p>
+            </div>
+
+            <h2>Gastos Essenciais vs. Não Essenciais</h2>
+            
+            <table>
+                <tr>
+                    <th>Essenciais</th>
+                    <th>Não Essenciais (mas parecem)</th>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>Moradia básica</li>
+                            <li>Alimentação em casa</li>
+                            <li>Transporte básico</li>
+                            <li>Saúde básica</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>TV por assinatura</li>
+                            <li>Delivery frequente</li>
+                            <li>Academia cara</li>
+                            <li>Smartphone último modelo</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+
+            <h2>Como Fazer Seu Raio X Financeiro</h2>
+            
+            <div class="example-box">
+                <p><strong>Passo a passo prático:</strong></p>
+                <ol>
+                    <li>Liste todas as suas fontes de renda</li>
+                    <li>Junte extratos bancários dos últimos 3 meses</li>
+                    <li>Analise faturas do cartão de crédito</li>
+                    <li>Anote TODOS os gastos por 30 dias</li>
+                    <li>Categorize os gastos (fixos, variáveis, sazonais)</li>
+                    <li>Some os valores por categoria</li>
+                    <li>Compare com sua renda</li>
+                </ol>
+            </div>
+
+            <h2>Gastos Que Podem Ser Reduzidos</h2>
+            <ul>
+                <li><strong>Alimentação:</strong> Planejar compras, evitar desperdício, reduzir delivery</li>
+                <li><strong>Transporte:</strong> Avaliar alternativas como transporte público ou carona</li>
+                <li><strong>Serviços:</strong> Rever pacotes de TV, internet, celular</li>
+                <li><strong>Lazer:</strong> Buscar alternativas gratuitas ou mais econômicas</li>
+                <li><strong>Compras:</strong> Evitar impulsos, pesquisar preços</li>
+            </ul>
+
+            <div class="alert-box">
+                <p><strong>Caso real:</strong> Maria achava que gastava cerca de R$ 400 por mês com delivery. Ao anotar todos os gastos, descobriu que o valor real era de R$ 850. Após essa descoberta, estabeleceu um limite mensal e economizou R$ 500 por mês apenas nessa categoria.</p>
+            </div>
+
+            <h2>Armadilhas Comuns</h2>
+            <ul>
+                <li>Pequenos gastos diários que somam muito no fim do mês</li>
+                <li>Assinaturas esquecidas ou pouco utilizadas</li>
+                <li>Taxas bancárias desnecessárias</li>
+                <li>Juros do rotativo do cartão de crédito</li>
+                <li>Compras parceladas que se sobrepõem</li>
+            </ul>
+
+            <div class="tip-box">
+                <p><strong>Regra 50-30-20:</strong> Uma diretriz popular sugere dividir seu orçamento da seguinte forma:</p>
+                <ul>
+                    <li><strong>50%</strong> para necessidades básicas</li>
+                    <li><strong>30%</strong> para gastos com qualidade de vida</li>
+                    <li><strong>20%</strong> para investimentos e objetivos futuros</li>
+                </ul>
+            </div>
+
+            <h2>Próximos Passos</h2>
+            <p>Após fazer seu raio X financeiro:</p>
+            <ol>
+                <li>Identifique áreas de maior gasto</li>
+                <li>Estabeleça metas realistas de redução</li>
+                <li>Crie um orçamento mensal</li>
+                <li>Monitore seus gastos regularmente</li>
+                <li>Ajuste seu estilo de vida se necessário</li>
+            </ol>
+
+            <div class="alert-box">
+                <p><strong>Lembre-se:</strong> O objetivo não é parar de gastar, mas gastar de forma consciente e alinhada com seus objetivos de vida.</p>
+            </div>
+
+        </div>
+        <div class="back-link">
+            <a href="../index.html" class="btn btn-outline-primary"><i class="bi bi-arrow-left"></i> Voltar para o curso</a>
+        </div>
+    </main>
+</body>
+
+</html>
